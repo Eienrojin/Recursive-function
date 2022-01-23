@@ -1,4 +1,6 @@
-﻿#include <iostream>
+//16. В заданном массиве заменить все числа, граничащие с цифрой «1», нулями.
+
+#include <iostream>
 
 using namespace std;
 
