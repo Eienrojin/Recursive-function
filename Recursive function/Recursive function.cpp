@@ -23,24 +23,18 @@ int main()
     printArray(exampleArray, LENGTH);
 }
 
-void nullifyAroundOne(int myArray[], int length, int constLength)
+void nullifyAroundOne(int myArray[], int length, int length2)
 {
-    const int ABSOLUTE_LENGTH = constLength;
+    const int ABSOLUTE_LENGTH = length2;
     int i = length;
 
-    if (myArray[i - 1] != 1)
+    if (myArray[i - 1] != 1 && i - 1 != -1)
     {
-        if (i - 1 != -1)
-        {
-            myArray[i - 1] = 0;
-        }
+        myArray[i - 1] = 0;
     }
-    if (myArray[i + 1] != 1)
+    if (myArray[i + 1] != 1 && i + 1 <= ABSOLUTE_LENGTH)
     {
-        if (i + 1 <= ABSOLUTE_LENGTH)
-        {
-            myArray[i + 1] = 0;
-        }
+        myArray[i + 1] = 0;
     }
 
     if (i >= 0)
